@@ -1,11 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>تسجيل الدخول | الأمن السيبراني</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+  <div class="grid" aria-hidden="true"></div>
+  <div class="particles" aria-hidden="true"></div>
+
+  <main class="wrap">
+    <section class="card" role="region" aria-labelledby="form-title">
+      <div class="lock">
+        <!-- Neon lock icon -->
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M7 10V8a5 5 0 0 1 10 0v2" stroke="url(#g1)" stroke-width="1.6"/>
+          <rect x="4" y="10" width="16" height="11" rx="2.5" stroke="url(#g2)" stroke-width="1.6"/>
+          <circle cx="12" cy="16" r="1.6" fill="url(#g1)"/>
+          <path d="M12 17.6v2.2" stroke="url(#g1)" stroke-width="1.6"/>
+          <defs>
+            <linearGradient id="g1" x1="0" y1="0" x2="24" y2="24">
+              <stop offset="0" stop-color="var(--accent)"/>
+              <stop offset="1" stop-color="var(--accent-2)"/>
+            </linearGradient>
+            <linearGradient id="g2" x1="4" y1="10" x2="20" y2="21">
+              <stop offset="0" stop-color="var(--accent)"/>
+              <stop offset="1" stop-color="var(--accent-2)"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <h1 class="title" id="form-title">تسجيل الدخول</h1>
+      </div>
+      <p class="subtitle">مرحبًا بك في بوابة الأمن السيبراني. الرجاء إدخال بياناتك للمتابعة.</p>
+
+      <form action="#" method="post" novalidate>
+        <div>
+          <label for="email">البريد الإلكتروني</label>
+          <input class="input" type="email" id="email" name="email" placeholder="name@example.com" required aria-required="true">
+        </div>
+        <div>
+          <label for="password">كلمة المرور</label>
+          <input class="input" type="password" id="password" name="password" placeholder="••••••••" required aria-required="true" minlength="6">
+        </div>
+        <div class="row">
+          <label class="checkbox"><input type="checkbox" name="remember"> تذكرني</label>
+          <a href="#" class="links-a" style="color:var(--accent)">نسيت كلمة المرور؟</a>
+        </div>
+        <button class="btn" type="submit">تسجيل الدخول</button>
+
+        <div class="links" aria-label="روابط إضافية">
+          <a href="#">إنشاء حساب جديد</a>
+          <a href="#">سياسة الخصوصية</a>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <div class="watermark" aria-hidden="true">
+    <svg viewBox="0 0 24 24" fill="none">
+      <path d="M12 2l3 6 6 .9-4.4 4.3L17.8 20 12 16.9 6.2 20l1.2-6.8L3 8.9 9 8l3-6z" stroke="currentColor"/>
+    </svg>
+    <span>واجهة بتصميم سيبراني – HTML & CSS فقط</span>
+  </div>
 </body>
 </html>
